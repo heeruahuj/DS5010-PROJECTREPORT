@@ -5,7 +5,6 @@ from sklearn.model_selection import train_test_split
 from sklearn import datasets
 import matplotlib.pyplot as plt
 
-#print('Heeru')
 def accuracy(y_actual, yhat):
     accuracy = np.sum(y_actual == yhat) / len(y_actual)
     return accuracy
