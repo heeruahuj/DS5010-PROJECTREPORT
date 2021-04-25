@@ -15,11 +15,7 @@ class LogisticRegressionClassifier:
         return s_z
 
     def loss(self, pred_y, y):
-        eps = 1e-5  
-        loss_num = (-y*np.log(pred_y + eps))
-        num2 = ((1-y)*np.log(1-pred_y + eps))
-        cost = loss_num - num2
-        return np.sum(cost)
+        return np.sum((-y*np.log(pred_y + 0.00001)) - ((1-y)*np.log(1-pred_y + 0.00001)))
 
     def fit(self, x, y, verbose = 0):
 
