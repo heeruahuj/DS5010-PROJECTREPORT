@@ -30,6 +30,7 @@ class LogisticRegressionClassifier:
         returns: Vectorized log probability loss
         '''
         # Calculating and returning log probability loss according to y value being 1 or 0.
+        # added 0.00001 for avoiding case of log(0)
         return np.sum((-y*np.log(pred_y + 0.00001)) - ((1-y)*np.log(1-pred_y + 0.00001)))
 
     def fit(self, x, y, verbose = 0):
