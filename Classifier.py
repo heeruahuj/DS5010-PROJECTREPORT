@@ -41,6 +41,8 @@ class LogisticRegressionClassifier:
         param verbose: parameter which decides whether to print loss for every iteration.
         returns: None
         '''
+        if self.iterations == 0:
+            return None
         # Initializing all weights to zero for first training.
         self.weight = np.zeros(x.shape[1])
 
@@ -76,6 +78,4 @@ class LogisticRegressionClassifier:
         predictions = [1 if probability > 0.5 else 0 for probability in pred_y]
 
         return np.array(predictions)
-
-
 
