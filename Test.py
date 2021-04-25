@@ -1,8 +1,6 @@
 import unittest
 import numpy as np
-from numpy.lib.function_base import _percentile_dispatcher
-import numpy.testing as npt
-from Classifier import LogisticRegressionClassifier
+from LogisticRegression import LogisticRegressionClassifier
 
 class Test(unittest.TestCase):
 
