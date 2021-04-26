@@ -61,13 +61,13 @@ The cost tells us how far from the actual label the prediction is. It is calcula
 1. DS5010 Final Project Report.docx - This is the Project Report
 2. README.md - This is the ReadMe File as per the requirements
 3. __init__.py - This is the initial commit
-4. NaiveBayesClassifier Folder - It contains all files related to Naive Bayes Classifier
--NaiveBayes.py - Naive Bayes implementation 
--ExampleNB - one tested example on the NaiveBayes implementation
+4. NaiveBayesClassifier Folder - It contains all files related to Naive Bayes Classifier<br>
+-NaiveBayes.py - Naive Bayes implementation <br>
+-ExampleNB - one tested example on the NaiveBayes implementation<br>
 -TestNB - Unit Testing of Naive Bayes Classifier
-5. LogisticRegressionClassifier Folder - It contains all the files related to Logistic Regression Classifier
--LogisticRegression.py - Logistic Regression Implementation 
--ExampleLR - one tested example on the Logistic Regression implementation 
+5. LogisticRegressionClassifier Folder - It contains all the files related to Logistic Regression Classifier<br>
+-LogisticRegression.py - Logistic Regression Implementation <br>
+-ExampleLR - one tested example on the Logistic Regression implementation <br>
 -TestLR - Unit Testing of Logistic Regression Classifier
 
 
