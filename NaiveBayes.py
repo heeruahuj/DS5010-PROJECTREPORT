@@ -1,5 +1,5 @@
 import numpy as np
-
+# Naive Bayes Classifier
 class NaiveBayesClassifier:
 
     def __init__(self):
