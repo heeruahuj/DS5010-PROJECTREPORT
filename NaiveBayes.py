@@ -1,6 +1,13 @@
 import numpy as np
 
 class NaiveBayesClassifier:
+
+    def __init__(self):
+        self.mean = None
+        self.variance = None
+        self.prior_probs = None
+        self.in_classes = None
+
     def fit(self, X, y):
         sam, feat = X.shape
         self.in_classes = np.unique(y)
@@ -15,7 +22,11 @@ class NaiveBayesClassifier:
             self.mean[index, :] = X_class.mean(axis=0)
             self.variance[index, :] = X_class.var(axis=0)
             self.prior_probs[index] = X_class.shape[0] / float(sam)
+        
+        return None
     def predict(self, X):
+        if self.prior_probs == None:
+            return None
         yhat = [self._predict(x) for x in X]
         return np.array(yhat)
 
@@ -34,3 +45,7 @@ class NaiveBayesClassifier:
         numerator = np.exp(- (x-mean)**2 / (2 * var))
         denominator = np.sqrt(2 * np.pi * var)
         return numerator / denominator
+
+
+
+
