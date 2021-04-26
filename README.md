@@ -12,20 +12,20 @@
 <p>
 *The Naive Bayes Classifier is based on the Bayes' Theorem.
   <br>
-  P(c|x) =[P(x|c).P(c)]/P(x)
+  **P(c|x) =[P(x|c).P(c)]/P(x)**
   <br>
   Here, 
-  P(y|X) =  P(X|y).P(y) / P(X)
+  **P(y|X) =  P(X|y).P(y) / P(X)**
   <br>
   *Naive Bayes makes the assumption that all the features are independant. So, Bayes Theorem can be re-written as:
   <br>
-  P(y|X) = [P(x<sub>1</sub>|y).P(x<sub>2</sub>|y)...P(x<sub>n</sub>|y). P(y)] / P(X)<br>
+  **P(y|X) = [P(x<sub>1</sub>|y).P(x<sub>2</sub>|y)...P(x<sub>n</sub>|y). P(y)] / P(X)**<br>
   *We can eliminate the denominator. For classification, we choose the class with the highest conditional probability. 
   <br>
   Then,
   <br>
-  yhat = argmax<sub>y</sub> P(x<sub>1</sub>|y).P(x<sub>2</sub>|y)...P(x<sub>n</sub>|y). P(y)<br>
-  yhat = argmax<sub>y</sub> log(P(x<sub>1</sub>|y)) + log(P(x<sub>2</sub>|y)) + .... + log(P(x<sub>n</sub>|y)) + log(P(y)) 
+  **yhat = argmax<sub>y</sub> P(x<sub>1</sub>|y).P(x<sub>2</sub>|y)...P(x<sub>n</sub>|y). P(y)**<br>
+  **yhat = argmax<sub>y</sub> log(P(x<sub>1</sub>|y)) + log(P(x<sub>2</sub>|y)) + .... + log(P(x<sub>n</sub>|y)) + log(P(y))** 
  <br>* This is the equation implemented in the predict() in NaiveBayes.py. 
   <br>
   *Posterior_probabilities in predict is used to calculate the sum of log(P(x<sub>i</sub>|y)) <br>
@@ -39,11 +39,11 @@
 <br>
  In gradient descent, we calculate the sigmoid probabilities using the sigmoid function - predicted probabilities
   <br>
-  S(z) = 1/(1+exp(-z))
+  **S(z) = 1/(1+exp(-z))**
   <br>
   Then, we calculate the gradients using the following gradient descent formula. 
   <br>
-  -y*log(wx)-(1-y)*log(1-wx). 
+  **-y*log(wx)-(1-y)*log(1-wx)**
   <br>
   Now, we update the weights by subtracting the gradient*learning rate. 
   <br>
@@ -66,9 +66,9 @@ The cost tells us how far from the actual label the prediction is. It is calcula
 -ExampleNB - one tested example on the NaiveBayes implementation
 -TestNB - Unit Testing of Naive Bayes Classifier
 5. LogisticRegressionClassifier Folder - It contains all the files related to Logistic Regression Classifier
-- LogisticRegression.py - Logistic Regression Implementation 
-- ExampleLR - one tested example on the Logistic Regression implementation 
-- TestLR - Unit Testing of Logistic Regression Classifier
+-LogisticRegression.py - Logistic Regression Implementation 
+-ExampleLR - one tested example on the Logistic Regression implementation 
+-TestLR - Unit Testing of Logistic Regression Classifier
 
 
 <h3> Simple Examples of Usage </h3>
