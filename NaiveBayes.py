@@ -1,5 +1,5 @@
 import numpy as np
-
+# Naive Bayes Classifier
 class NaiveBayesClassifier:
     def fit(self, X, y):
         sam, feat = X.shape
